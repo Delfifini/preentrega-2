@@ -14,8 +14,9 @@ Ingresá 2 para consultar todas las recetas
 Ingresá 3 para agregar una receta
 `
 let i = 0
+let loop =true
 
-while (true) {
+while (loop) {
     let opcion = Number(prompt(menu_recetas))
     if (opcion == 1) {
         sis.buscar_receta()
@@ -23,11 +24,10 @@ while (true) {
         sis.mostrar_recetas()
     } else if (opcion == 3 ) {
         sis.agregar_receta()
+    } else if (opcion == 4 ){
+        loop = false
+        confirm('¿Salir del menú?')
     } else {
         alert(`Opción incorrecta`)
     }
-    if (confirm('¿Salir del menú?')){
-        break
-    }
-
-    }
+}
