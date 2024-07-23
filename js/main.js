@@ -1,3 +1,9 @@
+let budin = new Receta('Budin', 'ingredientes y procedimiento', 0)
+let cookies =  new Receta('Cookies', 'ingredientes y procedimiento', 0)
+let pizza = new Receta('Pizza','ingredientes y procedimiento', 1)
+
+let recetas = [budin, cookies, pizza]
+
 const sis = new Sistema(recetas)
 
 let menu_recetas = `
@@ -14,9 +20,9 @@ while (true) {
     if (opcion == 1) {
         sis.buscar_receta()
     } else if (opcion == 2) {
-        sis.mostrar_recetas
+        sis.mostrar_recetas()
     } else if (opcion == 3 ) {
-        sis.agregar_receta
+        sis.agregar_receta()
     } else {
         alert(`Opción incorrecta`)
     }

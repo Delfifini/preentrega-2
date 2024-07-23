@@ -10,8 +10,3 @@ class Receta {
     }
 }
 
-let recetas = [
-    new Receta('Budin', 'ingredientes y procedimiento', 0),
-    new Receta('Cookies', 'ingredientes y procedimiento', 0),
-    new Receta('Pizza','ingredientes y procedimiento', 1)
-]
